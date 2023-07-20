@@ -1,0 +1,104 @@
+
+S6U5L3_summary.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Group 24
+  rotate: false
+  xy: 1152, 607
+  size: 310, 403
+  orig: 310, 403
+  offset: 0, 0
+  index: -1
+c water
+  rotate: false
+  xy: 1804, 980
+  size: 32, 30
+  orig: 32, 30
+  offset: 0, 0
+  index: -1
+c water1
+  rotate: false
+  xy: 1419, 568
+  size: 24, 37
+  orig: 24, 37
+  offset: 0, 0
+  index: -1
+c water2
+  rotate: false
+  xy: 966, 283
+  size: 31, 48
+  orig: 31, 48
+  offset: 0, 0
+  index: -1
+c water3
+  rotate: false
+  xy: 966, 249
+  size: 22, 32
+  orig: 22, 32
+  offset: 0, 0
+  index: -1
+c water4
+  rotate: false
+  xy: 414, 51
+  size: 31, 48
+  orig: 31, 48
+  offset: 0, 0
+  index: -1
+k Shape 644
+  rotate: false
+  xy: 1152, 347
+  size: 265, 258
+  orig: 265, 258
+  offset: 0, 0
+  index: -1
+k kem
+  rotate: false
+  xy: 1464, 711
+  size: 338, 299
+  orig: 338, 299
+  offset: 0, 0
+  index: -1
+k kem chay
+  rotate: false
+  xy: 538, 191
+  size: 426, 140
+  orig: 426, 140
+  offset: 0, 0
+  index: -1
+kd da
+  rotate: false
+  xy: 2, 2
+  size: 410, 97
+  orig: 410, 97
+  offset: 0, 0
+  index: -1
+kd khay
+  rotate: false
+  xy: 2, 101
+  size: 534, 230
+  orig: 534, 230
+  offset: 0, 0
+  index: -1
+kd nuoc
+  rotate: false
+  xy: 538, 92
+  size: 410, 97
+  orig: 410, 97
+  offset: 0, 0
+  index: -1
+kd vach ngan
+  rotate: false
+  xy: 1464, 594
+  size: 375, 115
+  orig: 375, 115
+  offset: 0, 0
+  index: -1
+popup
+  rotate: false
+  xy: 2, 333
+  size: 1148, 677
+  orig: 1148, 677
+  offset: 0, 0
+  index: -1

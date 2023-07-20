@@ -1,0 +1,76 @@
+
+S6U5L3_vocab.png
+size: 2048,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+heat 1
+  rotate: false
+  xy: 946, 65
+  size: 62, 60
+  orig: 62, 60
+  offset: 0, 0
+  index: -1
+heat Layer 1
+  rotate: true
+  xy: 501, 65
+  size: 60, 443
+  orig: 60, 443
+  offset: 0, 0
+  index: -1
+heat alc
+  rotate: false
+  xy: 266, 2
+  size: 60, 58
+  orig: 60, 58
+  offset: 0, 0
+  index: -1
+heat gas stove
+  rotate: false
+  xy: 2, 62
+  size: 497, 192
+  orig: 497, 192
+  offset: 0, 0
+  index: -1
+heat glass tube
+  rotate: true
+  xy: 1005, 186
+  size: 68, 451
+  orig: 68, 451
+  offset: 0, 0
+  index: -1
+heat ice
+  rotate: false
+  xy: 1820, 80
+  size: 220, 174
+  orig: 220, 174
+  offset: 0, 0
+  index: -1
+heat nuoc
+  rotate: false
+  xy: 1005, 148
+  size: 215, 36
+  orig: 215, 36
+  offset: 0, 0
+  index: -1
+heat thermometer
+  rotate: true
+  xy: 501, 127
+  size: 127, 502
+  orig: 127, 502
+  offset: 0, 0
+  index: -1
+heat xoong 1
+  rotate: false
+  xy: 1458, 74
+  size: 360, 180
+  orig: 360, 180
+  offset: 0, 0
+  index: -1
+heat xoong 2
+  rotate: false
+  xy: 2, 14
+  size: 262, 46
+  orig: 262, 46
+  offset: 0, 0
+  index: -1

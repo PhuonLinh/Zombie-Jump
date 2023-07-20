@@ -1,0 +1,90 @@
+
+humanchibi.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+b body
+  rotate: false
+  xy: 589, 119
+  size: 115, 107
+  orig: 115, 107
+  offset: 0, 0
+  index: -1
+b head
+  rotate: false
+  xy: 249, 14
+  size: 221, 212
+  orig: 221, 212
+  offset: 0, 0
+  index: -1
+b leg1
+  rotate: true
+  xy: 706, 63
+  size: 72, 82
+  orig: 72, 82
+  offset: 0, 0
+  index: -1
+b leg2
+  rotate: false
+  xy: 624, 36
+  size: 76, 81
+  orig: 76, 81
+  offset: 0, 0
+  index: -1
+b smile copy
+  rotate: true
+  xy: 980, 183
+  size: 43, 29
+  orig: 43, 29
+  offset: 0, 0
+  index: -1
+g body1
+  rotate: false
+  xy: 472, 118
+  size: 115, 108
+  orig: 115, 108
+  offset: 0, 0
+  index: -1
+g eg1
+  rotate: false
+  xy: 550, 34
+  size: 72, 82
+  orig: 72, 82
+  offset: 0, 0
+  index: -1
+g face
+  rotate: false
+  xy: 706, 137
+  size: 116, 89
+  orig: 116, 89
+  offset: 0, 0
+  index: -1
+g hand1
+  rotate: false
+  xy: 472, 28
+  size: 76, 88
+  orig: 76, 88
+  offset: 0, 0
+  index: -1
+g hand2
+  rotate: false
+  xy: 824, 138
+  size: 76, 88
+  orig: 76, 88
+  offset: 0, 0
+  index: -1
+g head
+  rotate: false
+  xy: 2, 2
+  size: 245, 224
+  orig: 245, 224
+  offset: 0, 0
+  index: -1
+g leg2
+  rotate: false
+  xy: 902, 145
+  size: 76, 81
+  orig: 76, 81
+  offset: 0, 0
+  index: -1

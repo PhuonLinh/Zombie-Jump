@@ -1,0 +1,76 @@
+
+S6U5L3_vocab2.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cool 1
+  rotate: false
+  xy: 1536, 394
+  size: 62, 60
+  orig: 62, 60
+  offset: 0, 0
+  index: -1
+cool Layer 1
+  rotate: true
+  xy: 2, 2
+  size: 20, 82
+  orig: 20, 82
+  offset: 0, 0
+  index: -1
+cool alc
+  rotate: false
+  xy: 770, 54
+  size: 62, 141
+  orig: 62, 141
+  offset: 0, 0
+  index: -1
+cool da
+  rotate: false
+  xy: 770, 257
+  size: 200, 48
+  orig: 200, 48
+  offset: 0, 0
+  index: -1
+cool glass tube
+  rotate: true
+  xy: 770, 307
+  size: 68, 451
+  orig: 68, 451
+  offset: 0, 0
+  index: -1
+cool khay
+  rotate: false
+  xy: 1274, 394
+  size: 260, 110
+  orig: 260, 110
+  offset: 0, 0
+  index: -1
+cool nuoc
+  rotate: false
+  xy: 1536, 456
+  size: 200, 48
+  orig: 200, 48
+  offset: 0, 0
+  index: -1
+cool thermometer
+  rotate: true
+  xy: 770, 377
+  size: 127, 502
+  orig: 127, 502
+  offset: 0, 0
+  index: -1
+cool tu lanh
+  rotate: false
+  xy: 2, 24
+  size: 766, 480
+  orig: 766, 480
+  offset: 0, 0
+  index: -1
+cool vach ngan
+  rotate: false
+  xy: 770, 197
+  size: 184, 58
+  orig: 184, 58
+  offset: 0, 0
+  index: -1
