@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/PROGRAMMER.unity
     guid: fcf554eb32ce9e7448b3e514de6c285b
   - enabled: 1
-    path: Assets/Scenes/TUTORIAL.unity
+    path: Assets/Scenes/TUTORIAL/TUTORIAL.unity
     guid: a826233f57408d0449799901027cb5f7
   m_configObjects: {}

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6001977233702906564}
   - component: {fileID: 6001977233702906560}
   - component: {fileID: 6001977233702906561}
+  - component: {fileID: 4935636224290430748}
   m_Layer: 0
   m_Name: ChibiPrefab
   m_TagString: player
@@ -155,3 +156,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.23, y: 5.856428}
   m_EdgeRadius: 0
+--- !u!114 &4935636224290430748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6001977233702906565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf84738795288e468715935d9d7777a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

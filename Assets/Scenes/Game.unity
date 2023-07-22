@@ -236,7 +236,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5815829323019650387, guid: 32b1a6add44d32042addd693866f3e1b, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5815829323019650387, guid: 32b1a6add44d32042addd693866f3e1b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -711,6 +711,57 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &725278883
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 725278885}
+  - component: {fileID: 725278884}
+  m_Layer: 0
+  m_Name: CharacterControllerBase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &725278884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725278883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8d53ec66bf89514ab7391dfc8e48269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minX: -9.9
+  maxX: 7.5
+  minY: -2.53
+  maxY: -2.53
+  moveSpeed: 2
+  spawnDelay: 5
+  chibiPrefab: {fileID: 4935636224290430748, guid: 18794f4fa6d11ee4688b47cea05d2a13, type: 3}
+--- !u!4 &725278885
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725278883}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.2241579, y: -0.5378608, z: -0.045035716}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &967421434
 GameObject:
   m_ObjectHideFlags: 0
@@ -965,16 +1016,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421877d3d8b72e545b74c6aec2c731f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 2
-  _isonGround: 0
-  _force: {x: 2000, y: 480}
-  zombiePrefab: {fileID: 3905539346284713231, guid: 511809445f430fe478a7cab9ca26b882, type: 3}
-  chibiPrefab: {fileID: 6001977233702906565, guid: 18794f4fa6d11ee4688b47cea05d2a13, type: 3}
-  destroyDelay: 2
   minX: -9.9
   maxX: 7.5
   minY: -2.53
   maxY: -2.53
+  moveSpeed: 0
+  spawnDelay: 5
+  chibiPrefab: {fileID: 6001977233702906565, guid: 18794f4fa6d11ee4688b47cea05d2a13, type: 3}
+  _speed: 2
+  _isonGround: 0
+  _force: {x: 2000, y: 480}
+  zombiePrefab: {fileID: 3905539346284713231, guid: 511809445f430fe478a7cab9ca26b882, type: 3}
+  destroyDelay: 2
 --- !u!50 &1114741268
 Rigidbody2D:
   serializedVersion: 4
@@ -1122,6 +1175,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ed38bc8fe65d4a409a4a954855c7725, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minX: -9.9
+  maxX: 7.5
+  minY: -2.53
+  maxY: -2.53
+  moveSpeed: 2
+  spawnDelay: 2
+  chibiPrefab: {fileID: 6001977233702906565, guid: 18794f4fa6d11ee4688b47cea05d2a13, type: 3}
   score: 0
   scoreText: {fileID: 609588947}
   count: 1
@@ -1487,54 +1547,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32b1a6add44d32042addd693866f3e1b, type: 3}
---- !u!1 &2111069760
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2111069762}
-  - component: {fileID: 2111069761}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2111069761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2111069760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 244d55d65a26f3e4fa161abcbd9208bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minX: -9.9
-  maxX: 7.5
-  minY: -2.53
-  maxY: -2.53
-  moveSpeed: 3
-  spawnDelay: 2
-  chibiPrefab: {fileID: 6001977233702906565, guid: 18794f4fa6d11ee4688b47cea05d2a13, type: 3}
---- !u!4 &2111069762
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2111069760}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.998835, y: -1.3400002, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

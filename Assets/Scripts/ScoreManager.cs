@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScoreManager : MonoBehaviour
+public class ScoreManager : CharacterControllerBase
 {
 	public static ScoreManager instance;
 	public int score;
@@ -19,8 +19,9 @@ public class ScoreManager : MonoBehaviour
 		makeInstance();
 	}
 
-	void Start()
+	protected override void Start()
 	{
+		base.Start();
         // Load the score from PlayerPrefs
 
 		IncrementScore();
@@ -42,11 +43,12 @@ public class ScoreManager : MonoBehaviour
 			//xu ly va cham nguoi choi
 			Debug.Log("Zombie an nguoi choi");
 
-			// Nhân bản zombie
-			GameObject newZombie = Instantiate(ZombiePrefab, transform.position, Quaternion.identity);
+			/*// Nhân bản zombie
+			GameObject newZombie = Instantiate(ZombiePrefab, transform.position, Quaternion.identity);*//*
+			StartCoroutine(SpawnChibiLoop());
 
 			// Hủy bỏ đối tượng người chơi
-			Destroy(collision.gameObject);
+			Destroy(collision.gameObject);*/
 		}
 
         if (collision.CompareTag("bom"))
