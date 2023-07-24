@@ -1077,6 +1077,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcd8fbb7ea128374fb12211979df89b4, type: 3}
+--- !u!1 &1114741266 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2156110030443016964, guid: b1d85e766ffee3441932b50d1e7bec9d, type: 3}
+  m_PrefabInstance: {fileID: 2156110031551457558}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1333935000
 GameObject:
   m_ObjectHideFlags: 0
@@ -1450,9 +1455,21 @@ PrefabInstance:
       value: Zombie
       objectReference: {fileID: 0}
     - target: {fileID: 2156110030443016972, guid: b1d85e766ffee3441932b50d1e7bec9d, type: 3}
+      propertyPath: _speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2156110030443016972, guid: b1d85e766ffee3441932b50d1e7bec9d, type: 3}
+      propertyPath: _force.x
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 2156110030443016972, guid: b1d85e766ffee3441932b50d1e7bec9d, type: 3}
+      propertyPath: _force.y
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2156110030443016972, guid: b1d85e766ffee3441932b50d1e7bec9d, type: 3}
       propertyPath: zombiePrefab
       value: 
-      objectReference: {fileID: 2156110030443016964, guid: b1d85e766ffee3441932b50d1e7bec9d, type: 3}
+      objectReference: {fileID: 1114741266}
     - target: {fileID: 2156110030443016974, guid: b1d85e766ffee3441932b50d1e7bec9d, type: 3}
       propertyPath: m_RootOrder
       value: 4

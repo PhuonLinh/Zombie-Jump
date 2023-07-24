@@ -42,9 +42,8 @@ public class CharacterControllerBase : MonoBehaviour
 
     void InstantiateBom()
     {
-        Vector3 randomSpawnPosition = new Vector3(Random.Range(maxX+2.5f, maxX +5f), Random.Range(minY, maxY), 0);
+        Vector3 randomSpawnPosition = new Vector3(Random.Range(maxX+4f, maxX +7f), Random.Range(minY, maxY), 0);
         bomControl newBomb = Instantiate(Bomb, randomSpawnPosition, Quaternion.identity);
-        newBomb.Setup();
     }
     //protected virtual void StartSpawningChibi()
     //{

@@ -18,5 +18,6 @@ public class ChibiControl : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.left * 2f * Time.deltaTime);
+            
     }
 }

@@ -12,7 +12,7 @@ public class ScoreManager : CharacterControllerBase
 	public int count;
 	public Text countText;
 
-	public GameObject ZombiePrefab;
+	/*public GameObject ZombiePrefab;*/
 
 	void Awake()
 	{

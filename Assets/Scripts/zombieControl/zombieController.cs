@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class zombieController : MonoBehaviour
 {
-    private float _speed;
+    [SerializeField] float _speed;
     [SerializeField] bool _isonGround = false;
-    private  Vector2 _force;
+    [SerializeField] Vector2 _force;
 
-    [SerializeField] GameObject zombiePrefab;
+    /*[SerializeField] GameObject zombiePrefab;*/
     /*public float destroyDelay = 2f; // Thời gian chờ trước khi hủy bỏ chibi cũ*/
 
     Rigidbody2D _rigi;
     Collider2D _colli;
 
 
-    protected void Start()
+    public void Start()
     {
         /*base.Start();*/
         _rigi = GetComponent<Rigidbody2D>();
