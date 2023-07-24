@@ -21,10 +21,10 @@ public class ScoreManager : CharacterControllerBase
 
 	protected override void Start()
 	{
-		base.Start();
+        base.Start();
         // Load the score from PlayerPrefs
 
-		IncrementScore();
+        IncrementScore();
 		IncrementCount();
     }
 
@@ -43,13 +43,9 @@ public class ScoreManager : CharacterControllerBase
 			//xu ly va cham nguoi choi
 			Debug.Log("Zombie an nguoi choi");
 
-			/*// Nhân bản zombie
-			GameObject newZombie = Instantiate(ZombiePrefab, transform.position, Quaternion.identity);*//*
-			StartCoroutine(SpawnChibiLoop());
-
 			// Hủy bỏ đối tượng người chơi
-			Destroy(collision.gameObject);*/
-		}
+			ChibiControl.Destroy(collision.gameObject);
+        }
 
         if (collision.CompareTag("bom"))
         {
@@ -83,7 +79,8 @@ public class ScoreManager : CharacterControllerBase
 		return this.count;
 	}
 
-	public void GetHighScore()
+	//xuất ra số điểm cao nhất từng đạt được
+	/*public void GetHighScore()
 	{
 		PlayerPrefs.SetInt("score", score);
 		if (PlayerPrefs.HasKey("highScore"))
@@ -98,5 +95,5 @@ public class ScoreManager : CharacterControllerBase
 		{
 			PlayerPrefs.SetInt("highScore", score);
 		}
-	}
+	}*/
 }

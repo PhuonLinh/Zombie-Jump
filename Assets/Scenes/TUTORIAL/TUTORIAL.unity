@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 115088409}
   - component: {fileID: 115088408}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: text00
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2002,6 +2002,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   btnComment00: {fileID: 1105794603}
   btnComment01: {fileID: 2051909225}
+  text00: {fileID: 115088408}
 --- !u!4 &1402262897
 Transform:
   m_ObjectHideFlags: 0

@@ -1,22 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class ControlZombie : CharacterControllerBase
+public class zombieController : MonoBehaviour
 {
-    [SerializeField] float _speed;
+    private float _speed;
     [SerializeField] bool _isonGround = false;
-    [SerializeField] Vector2 _force;
+    private  Vector2 _force;
 
-    public GameObject zombiePrefab;
-    public float destroyDelay = 2f; // Thời gian chờ trước khi hủy bỏ chibi cũ
+    [SerializeField] GameObject zombiePrefab;
+    /*public float destroyDelay = 2f; // Thời gian chờ trước khi hủy bỏ chibi cũ*/
 
     Rigidbody2D _rigi;
     Collider2D _colli;
 
 
-    protected override void Start()
+    protected void Start()
     {
         /*base.Start();*/
         _rigi = GetComponent<Rigidbody2D>();
@@ -49,7 +48,7 @@ public class ControlZombie : CharacterControllerBase
     void Moving()
     {
         Vector2 _moverment = Vector2.zero;
-        _moverment.x = Input.GetAxisRaw("Horizontal")* _speed;
+        _moverment.x = Input.GetAxisRaw("Horizontal") * _speed;
         _moverment.y = _rigi.velocity.y;
 
         _rigi.velocity = _moverment;
@@ -58,8 +57,8 @@ public class ControlZombie : CharacterControllerBase
         {
             this.transform.localScale = new Vector3(1, 1, 1);
         }
-        
-        if(Input.GetKey(KeyCode.Space) && _isonGround)
+
+        if (Input.GetKey(KeyCode.Space) && _isonGround)
         {
             _rigi.AddForce(_force);
             _isonGround = false;
@@ -87,5 +86,7 @@ public class ControlZombie : CharacterControllerBase
            
         }
     }*/
-    
+
 }
+
+

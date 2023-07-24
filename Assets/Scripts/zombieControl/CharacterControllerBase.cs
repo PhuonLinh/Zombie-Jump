@@ -4,21 +4,22 @@ using UnityEngine;
 
 public class CharacterControllerBase : MonoBehaviour
 {
-    public float minX=-9.9f;
-    public float maxX=7.5f;
-    public float minY=-2.53f;
-    public float maxY=-2.53f;
-    public float moveSpeed=2f;
-    public float spawnDelay = 2f; // Thời gian chờ giữa mỗi lần sinh nhân bản
+    protected float minX=-9.9f;
+    protected float maxX=9f;
+    protected float minY=-2.53f;
+    protected float maxY=1.6f;
+    protected float moveSpeed=2f;
+    /*public float spawnDelay = 2f; // Thời gian chờ giữa mỗi lần sinh nhân bản*/
     public ChibiControl chibiPrefab;
-    protected bool isSpawningChibi = false;
+    public bomControl Bomb;
+    /*protected bool isSpawningChibi = false;*/
 
     protected virtual void Start()
     {
         //StartSpawningChibi();
     }
 
-    float timeInstantiate = 2f;
+    float timeInstantiate = 9f;
     float timeStart;
     private void Update()
     {
@@ -28,6 +29,7 @@ public class CharacterControllerBase : MonoBehaviour
             //Todo
 
             InstantiateChibi();
+            InstantiateBom();
         }
     }
 
@@ -36,6 +38,13 @@ public class CharacterControllerBase : MonoBehaviour
         Vector3 randomSpawnPosition = new Vector3(Random.Range(maxX, maxX + 2f), Random.Range(minY, maxY), 0);
         ChibiControl newChibi = Instantiate(chibiPrefab, randomSpawnPosition, Quaternion.identity);
         newChibi.Setup();
+    }
+
+    void InstantiateBom()
+    {
+        Vector3 randomSpawnPosition = new Vector3(Random.Range(maxX+2.5f, maxX +5f), Random.Range(minY, maxY), 0);
+        bomControl newBomb = Instantiate(Bomb, randomSpawnPosition, Quaternion.identity);
+        newBomb.Setup();
     }
     //protected virtual void StartSpawningChibi()
     //{
@@ -66,7 +75,7 @@ public class CharacterControllerBase : MonoBehaviour
     //            // Hủy chibi mới
     //            Destroy(newChibi);
     //        }
-            
+
 
     //        // Tạm dừng trước khi hủy chibi mới
     //        yield return new WaitForSeconds(spawnDelay);

@@ -6,7 +6,8 @@ public class ChibiControl : MonoBehaviour
 {
     public void Setup()
     {
-        Invoke("destroyChibi", 5f);
+        //time chibi destroy
+        Invoke("destroyChibi", 8f);
     }
 
     void destroyChibi()
