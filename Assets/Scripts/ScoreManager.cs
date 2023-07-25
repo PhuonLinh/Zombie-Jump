@@ -58,6 +58,7 @@ public class ScoreManager : CharacterControllerBase
 			count--;
             Debug.Log("zombie cham bom");
             IncrementCount(); // Cập nhật giá trị count sau khi giảm
+			Destroy(collision.gameObject);
             /*Destroy(gameObject);*/
 			
 		}

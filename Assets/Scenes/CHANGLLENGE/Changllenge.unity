@@ -1551,6 +1551,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2156110030443016975, guid: b1d85e766ffee3441932b50d1e7bec9d, type: 3}
+      propertyPath: count
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2156110030443016975, guid: b1d85e766ffee3441932b50d1e7bec9d, type: 3}
       propertyPath: countText
       value: 
       objectReference: {fileID: 1333935002}

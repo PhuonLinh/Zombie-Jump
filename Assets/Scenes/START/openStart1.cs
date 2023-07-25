@@ -3,22 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ChangllengeButton : MonoBehaviour
+public class openStart1 : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
+    }
+
+    public void Play()
+    {
+        SceneManager.LoadScene("PROGRAMMER");
+    }
+
+    public void tutorial()
+    {
+        SceneManager.LoadScene("TUTORIAL");
     }
 
     public void changllenge()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Changllenge");
     }
 }
+
+
