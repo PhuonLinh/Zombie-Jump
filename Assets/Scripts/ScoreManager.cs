@@ -43,6 +43,12 @@ public class ScoreManager : CharacterControllerBase
 			//xu ly va cham nguoi choi
 			Debug.Log("Zombie an nguoi choi");
 
+			// Scale up the zombie by adding 0.5 to its current scale
+			Vector3 currentScale = transform.localScale;
+			Vector3 newScale = new Vector3(currentScale.x + 0.1f, currentScale.y + 0.1f, currentScale.z);
+			transform.localScale = newScale;
+			IncrementCount();
+			IncrementScore();
 			// Hủy bỏ đối tượng người chơi
 			ChibiControl.Destroy(collision.gameObject);
         }
@@ -52,7 +58,7 @@ public class ScoreManager : CharacterControllerBase
 			count--;
             Debug.Log("zombie cham bom");
             IncrementCount(); // Cập nhật giá trị count sau khi giảm
-            Destroy(gameObject);
+            /*Destroy(gameObject);*/
 			
 		}
 

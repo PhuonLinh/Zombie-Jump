@@ -7,6 +7,7 @@ public class zombieController : MonoBehaviour
     [SerializeField] float _speed;
     [SerializeField] bool _isonGround = false;
     [SerializeField] Vector2 _force;
+    
 
     /*[SerializeField] GameObject zombiePrefab;*/
     /*public float destroyDelay = 2f; // Thời gian chờ trước khi hủy bỏ chibi cũ*/
@@ -53,10 +54,10 @@ public class zombieController : MonoBehaviour
 
         _rigi.velocity = _moverment;
 
-        if (_rigi.velocity.x > 0)
+        /*if (_rigi.velocity.x > 0)
         {
             this.transform.localScale = new Vector3(1, 1, 1);
-        }
+        }*/
 
         if (Input.GetKey(KeyCode.Space) && _isonGround)
         {
@@ -71,6 +72,7 @@ public class zombieController : MonoBehaviour
         {
             _isonGround = true;
         }
+     
     }
     //----------------------------------------------------------
     /*private void OnTriggerEnter2D(Collider2D collision)

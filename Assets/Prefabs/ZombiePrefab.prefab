@@ -83,7 +83,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
-  m_Size: {x: 16.653875, y: 11.163509}
+  m_Size: {x: 10, y: 7}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -128,7 +128,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 36.0625, y: 27.0625}
-    newSize: {x: 16.653875, y: 11.163509}
+    newSize: {x: 10, y: 7}
     adaptiveTilingThreshold: 0.5
     drawMode: 1
     adaptiveTiling: 0
@@ -173,9 +173,8 @@ MonoBehaviour:
   Bomb: {fileID: -9191673418869517264, guid: 32b1a6add44d32042addd693866f3e1b, type: 3}
   score: 0
   scoreText: {fileID: 0}
-  count: 1
+  count: 3
   countText: {fileID: 0}
-  ZombiePrefab: {fileID: 2156110030443016964}
 --- !u!114 &2156110030443016972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,5 +187,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e008b6ddba6f3b4eb08bf2d99053f49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _speed: 2
   _isonGround: 0
-  zombiePrefab: {fileID: 2156110030443016964}
+  _force: {x: 250, y: 500}

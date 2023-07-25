@@ -27,22 +27,29 @@ public class CharacterControllerBase : MonoBehaviour
         {
             timeStart = Time.time;
             //Todo
-
+            InstantiateBomDown();
             InstantiateChibi();
-            InstantiateBom();
+            InstantiateBomUp();
+            
         }
     }
 
     void InstantiateChibi()
     {
-        Vector3 randomSpawnPosition = new Vector3(Random.Range(maxX, maxX + 2f), Random.Range(minY, maxY), 0);
+        Vector3 randomSpawnPosition = new Vector3(Random.Range(maxX-4f, maxX-3f), Random.Range(minY, maxY), 0);
         ChibiControl newChibi = Instantiate(chibiPrefab, randomSpawnPosition, Quaternion.identity);
         newChibi.Setup();
     }
 
-    void InstantiateBom()
+    void InstantiateBomUp()
     {
-        Vector3 randomSpawnPosition = new Vector3(Random.Range(maxX+4f, maxX +7f), Random.Range(minY, maxY), 0);
+        Vector3 randomSpawnPosition = new Vector3(Random.Range(maxX+6f, maxX +7f), Random.Range(maxY, maxY), 0);
+        bomControl newBomb = Instantiate(Bomb, randomSpawnPosition, Quaternion.identity);
+    }
+
+    void InstantiateBomDown()
+    {
+        Vector3 randomSpawnPosition = new Vector3(Random.Range(maxX , maxX + 1f), Random.Range(minY, minY), 0);
         bomControl newBomb = Instantiate(Bomb, randomSpawnPosition, Quaternion.identity);
     }
     //protected virtual void StartSpawningChibi()
